@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome Da Guilda - Recrutamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Overlay de Aviso -->
+    <div id="overlayAviso" class="overlay">
+        <div class="aviso-container">
+            <h2>Atenção</h2>
+            <p>Este site é oficial de recrutamento da Guilda Nome Da Guilda. Confie apenas nesse site. Caso contrário, você pode entrar em contato com os ADM via WhatsApp para fazer seu recrutamento.</p>
+            <p><b>ADM: Nome do ADM</b></p>
+            <p><b>Contato: Contato ADM</b></p>
+
+            <button onclick="fecharAviso()">Fechar</button>
+        </div>
+    </div>
+
+    <header>
+        <img src="logo.png" alt="OsTeimosos Logo" class="logo">
+        <h1>🔥 Nome Da Guilda 🔥</h1>
+        <p>A Guilda Mais Insana do Free Fire!</p>
+    </header>
+
+    <section id="sobre">
+        <h2>💀 Sobre a Guilda 💀</h2>
+        <p>Nome Da Guilda é uma guilda competitiva que busca os melhores jogadores para dominar o Free Fire.</p>
+    </section>
+
+    <section id="regras">
+        <h2>📜 Regras do Grupo & 4x4</h2>
+        <ul>
+            <li>🔥 Participamos de 4x4 todos os dias entre a guilda ou rivais.</li>
+            <li>🔥 O time principal será formado pelos dois melhores do 4x4.</li>
+            <li>🔥 Para entrar no camp, é obrigatório participar do 4x4 diário.</li>
+        </ul>
+        <h3>⚠️ ORDENS DO 4X4 ⚠️</h3>
+        <ul>
+            <li>✅ HABILIDADES PERMITIDAS: Alok, Kelly, Moco, Maxim.</li>
+            <li>❌ Não pode subir em cima de casa.</li>
+            <li>❌ Não pode pegar armas do drop.</li>
+            <li>❌ Não pode ficar com a call desligada.</li>
+            <li>❌ Quem abandonar a partida ficará <b>3 semanas</b> sem 4x4.</li>
+            <li>⚠️ Quem sair da guilda sem aviso <b>não pode voltar</b>.</li>
+        </ul>
+    </section>
+
+    <section id="formulario">
+        <h2>📋 Formulário de Recrutamento</h2>
+        
+        <div class="aviso">
+            ⚠️ <b>Atenção:</b> Antes de se cadastrar, leia as regras do grupo e 4x4!  
+            <b>Quem não seguir as regras será removido da guilda.</b>  
+        </div>
+        
+        <form id="recrutamentoForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="nick">Nick do Free Fire:</label>
+            <input type="text" id="nick" required>
+
+            <label for="id">ID do Free Fire:</label>
+            <input type="number" id="id" oninput="this.value = this.value.replace(/\D/g, '')" required>
+
+            <label for="contato">Contato (WhatsApp):</label>
+            <input type="number" id="contato" oninput="this.value = this.value.replace(/\D/g, '')" required>
+
+            <label class="checkbox">
+                <input type="checkbox" id="aceitarRegras" required>
+                Li e concordo com as regras do grupo e 4x4.
+            </label>
+
+            <button type="submit">💀 Enviar Cadastro 💀</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Nome Da Guilda - A Lenda Nunca Morre | <a href="https://www.instagram.com/" target="_blank">Instagram da Guilda</a></p>
+    </footer>
+
+    <!-- Diálogo de Sucesso -->
+    <div id="dialogo" class="dialogo">
+        <div class="dialogo-conteudo">
+            <h2>✅ Cadastro Enviado!</h2>
+            <p>Seu pedido de recrutamento foi enviado com sucesso! Entraremos em contato pelo WhatsApp.</p>
+            <button onclick="fecharDialogo()">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
