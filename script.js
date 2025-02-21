@@ -29,7 +29,7 @@ document.getElementById("recrutamentoForm").addEventListener("submit", function(
                    `📱 Contato: ${contato}\n\n` +
                    `💀 Enviado via Formulário da Guilda!`;
 
-    let apiUrl = `https://api.callmebot.com/whatsapp.php?phone=+5500000000000&text=${encodeURIComponent(mensagem)}&apikey=0000000`;
+    let apiUrl = `https://api.callmebot.com/whatsapp.php?phone=5521976402296&text=${encodeURIComponent(mensagem)}&apikey=2202603`;
 
     fetch(apiUrl)
         .then(response => {
